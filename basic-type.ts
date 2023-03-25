@@ -5,7 +5,7 @@ const a: number[] = [1, 2, 3];
 const a2: Array<number> = [1, 2, 3];
 
 const week1: string[] = ['mon', 'tue', 'wed'];
-const week2: Array<string> = ['mon', 'tue', 'wed']
+const week2: Array<string> = ['mon', 'tue', 'wed'];
 
 // week1.push(1);
 
@@ -42,11 +42,16 @@ const u: undefined = undefined;
 
 // enum
 enum Os {
-  Window = 3,
-  Ios = 10,
-  Android,
+  Window = 'Window',
+  Ios = 'Ios',
+  Android = 'Android',
 }
 
-let myOs: Os;
+let myComputer: Os;
+myComputer = Os.Window;
+// myComputer = 'Window';
+console.log(myComputer); // 0
 
-myOs = Os.Window;
+console.log(Os.Window);
+console.log(Os.Ios);
+console.log(Os.Android);
